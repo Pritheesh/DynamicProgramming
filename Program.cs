@@ -1,4 +1,4 @@
-﻿namespace HowSum
+﻿namespace DynamicProgramming
 {
     class Program
     {

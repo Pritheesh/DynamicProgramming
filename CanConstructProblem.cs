@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HowSum
+namespace DynamicProgramming
 {
     public static class CanConstructProblem
     {
@@ -30,7 +30,7 @@ namespace HowSum
             Console.WriteLine(CanConstruct("abcdef", new List<string> { "ab", "abc", "cd", "def", "abcd" }));
             Console.WriteLine(CanConstruct("skateboard", new List<string> { "bo", "rd", "ate", "t", "ska", "sk", "boar" }));
             Console.WriteLine(CanConstruct("enterapotentpot", new List<string> { "a", "p", "ent", "enter", "ot", "o", "t" }));
-            Console.WriteLine(CanConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeg", 
+            Console.WriteLine(CanConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeg",
                 new List<string> { "e", "ee", "eee", "eeee", "eeeee", "eeeeeee", "eeeeeeeee" }));
             Console.WriteLine("--------------CanConstruct End---------------");
         }

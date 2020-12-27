@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HowSum
+namespace DynamicProgramming
 {
     public static class AllConstructProblem
     {
@@ -33,10 +33,10 @@ namespace HowSum
         public static void AllConstructStub()
         {
             Console.WriteLine("--------------AllConstruct Begin---------------");
-            PrintUtils.PrintListOfLists(AllConstruct("purple", new List<string> { "purp", "p", "ur", "le", "purpl" }));
-            PrintUtils.PrintListOfLists(AllConstruct("abcdef", new List<string> { "ab", "abc", "cd", "def", "abcd", "ef", "c" }));
-            PrintUtils.PrintListOfLists(AllConstruct("skateboard", new List<string> { "bo", "rd", "ate", "t", "ska", "sk", "boar" }));
-            PrintUtils.PrintListOfLists(AllConstruct("enterapotentpot", new List<string> { "a", "p", "ent", "enter", "ot", "o", "t" }));
+            AllConstruct("purple", new List<string> { "purp", "p", "ur", "le", "purpl" }).PrintListOfLists();
+            AllConstruct("abcdef", new List<string> { "ab", "abc", "cd", "def", "abcd", "ef", "c" }).PrintListOfLists();
+            AllConstruct("skateboard", new List<string> { "bo", "rd", "ate", "t", "ska", "sk", "boar" }).PrintListOfLists();
+            AllConstruct("enterapotentpot", new List<string> { "a", "p", "ent", "enter", "ot", "o", "t" }).PrintListOfLists();
             AllConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeg",
                 new List<string> { "eg", "ee", "eee", "eeee", "eeeee", "eeeeeee", "eeeeeeeee" });
             Console.WriteLine("--------------AllConstruct End---------------");

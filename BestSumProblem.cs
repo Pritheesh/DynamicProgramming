@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HowSum
+namespace DynamicProgramming
 {
     public static class BestSumProblem
     {
