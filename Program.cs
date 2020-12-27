@@ -4,15 +4,21 @@
     {
         static void Main(string[] args)
         {
-            //FibonacciProblem.FibonacciStub();
-            //GridTravelerProblem.GridTravelerStub();
-            //CanSumProblem.CanSumStub();
-            //HowSumProblem.HowSumStub();
-            //BestSumProblem.BestSumStub();
-            //CanConstructProblem.CanConstructStub();
-            //HowConstructProblem.HowConstructStub();
-            //CountConstructProblem.CountConstructStub();
-            AllConstructProblem.AllConstructStub();
+            FibonacciProblem.Stub();
+            GridTravelerProblem.Stub();
+            CanSumProblem.Stub();
+            HowSumProblem.Stub();
+            BestSumProblem.Stub();
+            CanConstructProblem.Stub();
+            HowConstructProblem.Stub();
+            CountConstructProblem.Stub();
+            AllConstructProblem.Stub();
+            FibonacciTabulationProblem.Stub();
+            GridTravelerTabulationProblem.Stub();
+            CanSumTabulationProblem.Stub();
+            HowSumTabulationProblem.Stub();
+            BestSumTabulationProblem.Stub();
+
         }
     }
 }

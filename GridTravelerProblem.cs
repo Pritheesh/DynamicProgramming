@@ -20,7 +20,7 @@ namespace DynamicProgramming
             return value;
         }
 
-        public static void GridTravelerStub()
+        public static void Stub()
         {
             Console.WriteLine("--------------GridTraveler Begin---------------");
             Console.WriteLine(GridTraveler(3, 3));

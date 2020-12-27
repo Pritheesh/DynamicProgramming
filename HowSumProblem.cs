@@ -30,14 +30,14 @@ namespace DynamicProgramming
             return null;
         }
 
-        public static void HowSumStub()
+        public static void Stub()
         {
             Console.WriteLine("--------------HowSum Begin---------------");
-            Console.WriteLine(string.Join(", ", HowSum(7, new List<int> { 5, 3, 4, 7 })));
-            Console.WriteLine(string.Join(", ", HowSum(7, new List<int> { 2, 3 })));
-            Console.WriteLine(string.Join(", ", HowSum(7, new List<int> { 2, 4 }) ?? new List<int> { }));
-            Console.WriteLine(string.Join(", ", HowSum(8, new List<int> { 2, 3, 5 }) ?? new List<int> { }));
-            Console.WriteLine(string.Join(", ", HowSum(300, new List<int> { 7, 14 }) ?? new List<int> { }));
+           HowSum(7, new List<int> { 5, 3, 4, 7 }).PrintList();
+           HowSum(7, new List<int> { 2, 3 }).PrintList();
+           HowSum(7, new List<int> { 2, 4 }).PrintList();
+           HowSum(8, new List<int> { 2, 3, 5 }).PrintList();
+           HowSum(300, new List<int> { 7, 14 }).PrintList();
             Console.WriteLine("--------------HowSum End---------------");
         }
     }

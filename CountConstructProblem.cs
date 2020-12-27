@@ -26,7 +26,7 @@ namespace DynamicProgramming
             return totalCount;
         }
 
-        public static void CountConstructStub()
+        public static void Stub()
         {
             Console.WriteLine("--------------CountConstruct Begin---------------");
             Console.WriteLine(CountConstruct("abcdef", new List<string> { "ab", "abc", "cd", "def", "abcd" }));

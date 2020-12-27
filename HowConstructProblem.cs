@@ -34,14 +34,14 @@ namespace DynamicProgramming
             return retVal;
         }
 
-        public static void HowConstructStub()
+        public static void Stub()
         {
             Console.WriteLine("--------------HowConstruct Begin---------------");
-            Console.WriteLine(string.Join(", ", HowConstruct("abcdef", new List<string> { "ab", "abc", "cd", "def", "abcd" })));
-            Console.WriteLine(HowConstruct("skateboard", new List<string> { "bo", "rd", "ate", "t", "ska", "sk", "boar" }));
-            Console.WriteLine(string.Join(", ", HowConstruct("enterapotentpot", new List<string> { "a", "p", "ent", "enter", "ot", "o", "t" })));
-            Console.WriteLine(HowConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeg",
-                new List<string> { "e", "ee", "eee", "eeee", "eeeee", "eeeeeee", "eeeeeeeee" }));
+            HowConstruct("abcdef", new List<string> { "ab", "abc", "cd", "def", "abcd" }).PrintList();
+            HowConstruct("skateboard", new List<string> { "bo", "rd", "ate", "t", "ska", "sk", "boar" }).PrintList();
+            HowConstruct("enterapotentpot", new List<string> { "a", "p", "ent", "enter", "ot", "o", "t" }).PrintList();
+            HowConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeg",
+                new List<string> { "e", "ee", "eee", "eeee", "eeeee", "eeeeeee", "eeeeeeeee" }).PrintList();
             Console.WriteLine("--------------HowConstruct End---------------");
         }
     }

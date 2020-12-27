@@ -27,7 +27,7 @@ namespace DynamicProgramming
             return false;
         }
 
-        public static void CanSumStub()
+        public static void Stub()
         {
             Console.WriteLine("--------------CanSum Begin---------------");
             Console.WriteLine(CanSum(7, new[] { 4, 5, 3, 7 }));

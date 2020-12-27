@@ -29,17 +29,17 @@ namespace DynamicProgramming
             return retVal;
         }
 
-        public static void BestSumStub()
+        public static void Stub()
         {
             Console.WriteLine("--------------BestSum Begin---------------");
-            Console.WriteLine(string.Join(", ", BestSum(7, new List<int> { 5, 3, 4, 7 })));
-            Console.WriteLine(string.Join(", ", BestSum(7, new List<int> { 2, 3 })));
-            Console.WriteLine(string.Join(", ", BestSum(8, new List<int> { 1, 4, 5 })));
-            Console.WriteLine(string.Join(", ", BestSum(8, new List<int> { 2, 3, 5 })));
-            Console.WriteLine(string.Join(", ", BestSum(100, new List<int> { 1, 2, 5, 25 })));
-            Console.WriteLine(string.Join(", ", BestSum(7, new List<int> { 2, 4 }) ?? new List<int> { }));
-            Console.WriteLine(string.Join(", ", BestSum(8, new List<int> { 2, 3, 5 }) ?? new List<int> { }));
-            Console.WriteLine(string.Join(", ", BestSum(300, new List<int> { 7, 14 }) ?? new List<int> { }));
+            BestSum(7, new List<int> { 5, 3, 4, 7 }).PrintList();
+            BestSum(7, new List<int> { 2, 3 }).PrintList();
+            BestSum(8, new List<int> { 1, 4, 5 }).PrintList();
+            BestSum(8, new List<int> { 2, 3, 5 }).PrintList();
+            BestSum(100, new List<int> { 1, 2, 5, 25 }).PrintList();
+            BestSum(7, new List<int> { 2, 4 }).PrintList();
+            BestSum(8, new List<int> { 2, 3, 5 }).PrintList();
+            BestSum(300, new List<int> { 7, 14 }).PrintList();
             Console.WriteLine("--------------BestSum End---------------");
         }
 

@@ -24,7 +24,7 @@ namespace DynamicProgramming
             return false;
         }
 
-        public static void CanConstructStub()
+        public static void Stub()
         {
             Console.WriteLine("--------------CanConstruct Begin---------------");
             Console.WriteLine(CanConstruct("abcdef", new List<string> { "ab", "abc", "cd", "def", "abcd" }));

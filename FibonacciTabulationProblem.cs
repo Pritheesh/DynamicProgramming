@@ -3,19 +3,22 @@ using System.Collections.Generic;
 
 namespace DynamicProgramming
 {
-    public static class FibonacciProblem
+    public static class FibonacciTabulationProblem
     {
-        private static ulong Fibonacci(int n, Dictionary<int, ulong> dict = null)
+        private static ulong Fibonacci(int n)
         {
-            if (dict == null) dict = new Dictionary<int, ulong>();
-            if (dict.ContainsKey(n)) return dict.GetValueOrDefault(n);
+            ulong[] result = new ulong[n + 1];
 
-            if (n <= 2) return 1;
+            result[1] = 1;
 
-            var current = Fibonacci(n - 1, dict) + Fibonacci(n - 2, dict);
-            dict.Add(n, current);
+            for (var i = 0; i <= n; i++)
+            {
+                var current = result[i];
+                if (i + 1 <= n) result[i + 1] += current;
+                if (i + 2 <= n) result[i + 2] += current;
+            }
 
-            return current;
+            return result[n];
         }
 
         public static void Stub()
